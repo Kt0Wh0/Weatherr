@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+
+    <div id="inptn">
+        <div class="inp">
+            <input type="text" id="inp" placeholder="Название города"></input>
+        </div>
+        <div class="btn">
+            <button onclick="weather()" id="btn">узнать погоду</button>
+        </div>
+    </div>
+    
+   
+<div id="scboard"> 
+    <div class="top">
+        <img class="icon city" src="img/city.svg" alt="city_icon">
+        <div id="city"></div>
+    </div>
+    
+    <div id="pr">
+        <div class="pr">
+            <div class="text now">Температура сейчас</div>
+            <div class="data_a">
+                <div class="data" id="temp"></div>
+                <img class="icon" src="img/temp.svg" alt="temp">
+            </div>
+        </div>
+        <div class="pr">
+            <div class="text feel">Ощущается как</div>
+            <div class="data_a">
+                <div class="data" id="feels"></div>
+                
+            </div>
+        </div>
+        <div class="pr">
+            <div class="text">Скорость ветра</div>
+            <div class="data_a">
+                <div class="data" id="speed"></div>
+                <img class="icon wind" src="img/wind.png" alt="wind">
+            </div>
+        </div>
+        <div class="pr">
+            <div class="text max">Влажность воздуха</div>
+            <div class="data_a">
+                <div class="data" id="humidity"></div>
+                <img class="icon" src="img/humidity.svg" alt="humidity">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
